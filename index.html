@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -26,7 +28,7 @@
                     <li><a href="#acerca">Acerca de</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#locales">Locales</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
             <i class="logos"><svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,77 +48,262 @@
             <div class="rectangle-img">
                 <img class="image-local" src="images/6656d2b47796a.jpg" alt="">
                 <div class="home-text">
-                    <h1>Disfruta un <span>Cafe</span> Perfecto</h1>
+                    <h1>Más que una <span>&nbsp; Cafetería</span>, una experiencia sensorial.</h1>
                     <p>
-                        Aumenta tu productividad
+                        Tu momento de tranquilidad, nuestra mejor taza.
                     </p>
+                </div>
+            </div>
+
+        </section>
+        <section id="popular-section" style="height: 10rem;" >
+            <div class="popular-container">
+                <h2>Populares Hoy</h2>
+                <div class="cards-base">
+                    <div class="card-group">
+                        <div class="card">
+                         <img src="images/unsplash_RFHFV7lVQBY.png" alt="" class="card-img-top" style="border-radius: 12px;" >
+                          <div class="card-body">
+                            <h5 class="card-title">Vainilla Latte <span>&emsp; &emsp; &emsp;$200</span></h5>
+                            <p class="card-text">Pidalo Frio o Caliente</p>
+                            <div class="d-inline-flex gap-2" role="group" aria-label="Basic radio toggle button group">
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-warning" for="btnradio1">Caliente</label>
+                          
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-info" for="btnradio2">Frio</label>
+                                <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="false"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                    </svg> Comprar</button>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="card" >
+                        <img src="images/espresso.png" alt="" class="card-img-top" style="border-radius: 12px;">
+                          <div class="card-body">
+                          <h5 class="card-title">Expresso <span>&emsp; &emsp; &emsp; $100</span></h5>
+                          <p class="card-text">Pidalo Frio o Caliente</p>
+                          <div class="d-inline-flex gap-2" role="group" aria-label="Basic radio toggle button group">
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-warning" for="btnradio1">Caliente</label>
+                      
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-info" for="btnradio2">Frio</label>
+                            <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg> Comprar</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/hazelnut latte.png" alt="" class="card-img-top" style="border-radius: 12px;">
+                          <div class="card-body">
+                          <h5 class="card-title">Hazelnut Latte <span>&emsp; &emsp;&emsp;$500</span></h5>
+                          <p class="card-text">Pidalo Frio o Caliente</p>
+                          <div class="d-inline-flex gap-2" role="group" aria-label="Basic radio toggle button group">
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                            <label class="btn btn-outline-warning" for="btnradio1">Caliente</label>
+                      
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-info" for="btnradio2">Frio</label>
+                            <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                </svg> Comprar</button>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="servicios" >
+            <h2>Como utilizar nuestros servicios de envio</h2>
+            <div class="service">
+                <div class="service-category-1" >
+                    <img class="service-image-1" src="images/image.png" alt="">
+                    <h3 style="text-align: center;" >Elije tu cafe preferido</h3>
+                    <p style="text-align: center;" >Tenemos mas de 20 cafes para ti</p>
+                </div>
+                <div class="service-category-1" >
+                    <img class="service-image-2" src="images/food-truck 1.png" alt="">
+                    <h3 style="text-align: center;" >Te lo enviamos a donde estes</h3>
+                    <p style="text-align: center;"  >Elije la forma de envio</p>
+                </div>
+                <div class="service-category-1" >
+                    <img class="service-image-3" src="images/coffee-cup 2.png" alt="">
+                    <h3 style="text-align: center;" >Disfruta de tu cafe! </h3>
+                    <p style="text-align:center;" >Recibe y disfruta de tu cafe y recomiendanos</p>
+                </div>
+            </div>
+        </section>
+        <section id="acerca">
+               <div class="border-acerca"><img  class="img-acerca" src="images/img-acerca.png" alt=""></div>
+                <div class="acerca-info">
+                    <h3>Aceca de nosotros</h3>
+                    <p>"En nuestra cafetería, nos apasiona ofrecerte sabores y aromas exquisitos en cada taza, placer en cada sorbo y amor en cada bocado. Disfruta de nuestra calidad excepcional en cada visita."</p>
+                    <button class="btn-acerca">Obten tu cafe</button>
+                </div>
+            
+        </section>
+        <section id="menu">
+            <h2 class="menu-title" >Un Menu Especial para ti</h2>
+            <div class="menu-products" >
+                <div class="cards-base menu-cards" >
+                    <div class="row row-cols-1 row-cols-sm-3 g-4" >
+                        <div class="col">
+                            <div class="card" style="width: 22rem;" >
+                                <img src="images/sandwich.png" alt="" class="card-img-top" style="border-radius: 12px;" >
+                                 <div class="card-body">
+                                   <h3 class="card-title">Sandwich <span>&emsp; &emsp; &emsp;$100</span></h3>
+                                   <p class="card-text">Tostado con Jamon y verduras</p>
+                                   <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                    </svg> Comprar</button>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 22rem;">
+                                <img src="images/leche-caliente.png" alt="" class="card-img-top" style="border-radius: 12px;" >
+                                 <div class="card-body">
+                                    <h3 class="card-title">Leche Caliente <span>&emsp; $200</span></h3>
+                                    <p class="card-text">Leche calienet con o sin chocol</p>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                     </svg> Comprar</button>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 22rem;">
+                                <img src="images/cafe-frio-helado.png" alt="" class="card-img-top" style="border-radius: 12px;" >
+                                 <div class="card-body">
+                                    <h3 class="card-title">Cafe Helado <span>&emsp; &emsp;$500</span></h3>
+                                    <p class="card-text">Cafe con helado de Vainilla</p>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                     </svg> Comprar</button>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 22rem;">
+                                <img src="images/capuchino.png" alt="" class="card-img-top" style="border-radius: 12px;" >
+                                 <div class="card-body">
+                                    <h3 class="card-title">Cappucino <span>&emsp; &emsp;$800</span></h3>
+                                    <p class="card-text">Cappucino caliente para llevar</p>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                     </svg> Comprar</button>
+                                   
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 22rem;">
+                                <img src="images/mocacino.png" alt="" class="card-img-top" style="border-radius: 12px;" >
+                                 <div class="card-body">
+                                    <h3 class="card-title">Moccacinno <span>&emsp; &emsp;$900</span></h3>
+                                    <p class="card-text">Moccacino Caliente para llevar </p>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                     </svg> Comprar</button>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 22rem;">
+                                <img src="images/waffle-helado.png" alt="" class="card-img-top" style="border-radius: 12px;" >
+                                 <div class="card-body">
+                                   
+                                    <h3 class="card-title">Waffle Helado  <span>&emsp;$1000</span></h3>
+                                    <p class="card-text">Waffle con Helado de Vainilla </p>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                     </svg> Comprar</button>
+                                 </div>
+                            </div>
+                        </div>
+                      </div>
+                
+            </div>
+        </section>
+        <section id="locales">
+            <div class="locales-bg" >
+                <div class="locales-info">
+                    <h1>Todos nuestros locales</h1>
+                    <p>Brindamos siempre el mejor servicio y mantenemos siempre la calidad del café.</p>
+                    <h4>Visita la Galeria de nuestros locales</h4>
+                </div>
+                <div>
+                </div>
+                <div class="galeria">
+                      <img src="images/Local1.png" alt="">
+                      <img src="images/Local2.png" alt=""> 
+                      <img src="images/Local3.png" alt="">
+                      <img src="images/Local4.png" alt="">
+                      <img src="images/Local5.png" alt="">
+                      <img src="images/Local6.png" alt="">
+                      <img src="images/Local7.png" alt="">
+                
                 </div>
             </div>
             
         </section>
-        <section id="popular-container" style="height: 10rem;" >
-            <div class="popular-container">
-                <h3>Populares Hoy</h3>
-                <div>
-                    tarjetas
-                </div>
-            </div>
-        </section>
-        <section id="servicios">
-            <div>
-                <h3>Servicios de Envio</h3>
-            </div>
-        </section>
-        <section id="acerca">
-           <div>
-            <img src="" alt="">
-            <h3>Aceca de nosotros</h3>
-            <h4>Preparamos cafe de calidad</h4>
-            <p>Nuestra empresa se define por un cafe de calidad.</p>
-            <button>Obten tu cafe</button>
-           </div>
-        </section>
-        <section id="menu">
-         <div>
-            <h3>Un Menu Especial para ti</h3>
-            <p>Tarjetas</p>
-         </div>
-        </section>
-        <section id="locales">
-            <div>
-                <h4>Todos nuestros locales</h4>
-                <p>Nuestros locales te brindaran la mejor atencion</p>
-            </div>
-            <div>
-                <p>Imagenes de locales</p>
-            </div>
-        </section>
         <section id="contacto">
-            <div>
-                <h3>Contacta con nosotros</h3>
-                <form action="">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
-                    <label for="telefono">Nro: Telefono</label>
-                    <input type="text" name="telefono" id="tel">
-                    <label for="email">Correo</label>
-                    <input type="email" name="correo" id="correo">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje"></textarea>
-                    <div class="button-container">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Borrar</button>
-                    </div>
+            <h3 class="contact-title" >Contacta con nosotros</h3>
+            <div class="form-contact">
+                <form action="" id="form">
+                    <label for="nombre" id="name-label">Nombre: <input type="text" id="nombre" required placeholder="Ingrese su Nombre"></label>
+                   
+                    <label for="apellido" id="name-label">Apellido: <input type="text" id="apellido" required placeholder="Ingrese su Apellido"></label>
+
+                    <label for="email" id="email-label">Email: <input type="email" name="" id="email" required placeholder="email@email.com"></label>
+                    
+                    <label for="telefono" id="name-label">Telefono: <input type="text" id="tel" required placeholder="+54"></label>
+
+                    <label for="edad" id="number-label">Edad: <input type="number" name="" id="number" min="18" max="50" placeholder="18"></label>
+                    
+                    
+
+                    <label for="dropdown">¿Qué opción describe mejor su función actual?
+                        <select name="dropdown" id="dropdown">
+                            <option value="">Selecciona una opcion</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trabajo de tiempo completo</option>
+                            <option value="3">Trabajo de medio tiempo</option>
+                        </select>
+                    </label>
+            
+                    <label for="recommend">¿Recomendarias a Caffe Walk?</label>
+                        <label for="recommend"><input type="radio" name="recommend" id="recommend" value="Definitivamente" class="inline">Definitivamente</label>
+                        <label for="recommend"><input type="radio" name="recommend" id="recommend" value="TalVez" class="inline">Tal Vez</label>
+                        <label for="recommend"><input type="radio" name="recommend" id="recommend" value="No" class="inline">Not creo..</label>
+            
+                    <label for="improved">¿En que puesto te gustaria aplicar?
+                    <label for=""><input type="checkbox" name="improved" value="pasteleria" class="inline">Pasteleria</label>
+                       <label for=""> <input type="checkbox" name="improved" value="preparacion" class="inline"> Preparacion de Cafe</label>
+                       <label for=""> <input type="checkbox" name="improved" value="delivery" class="inline">Cadete de delivery</label>
+                    </label>
+                
+                    <label for="comments">Cuentanos mas acerca de ti:
+                        <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Aprovecha para contarnos acerca de ti y tus dudas." ></textarea>
+                    </label>
+                    
+                    <input type="submit" id="submit">
+                    <input type="reset" id="reset">
+            
                 </form>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-cotainer">
-            <p>Creado Por Matias Kottwitz</p>
-        </div>
-    </footer>
+    <footer class="site-footer">
+        <hr>
+        <div class="copyright-text">&copy; 2024 Todos los derechos reservados para Matias Kottwitz </div>
+</footer>
 </body>
 </html>
