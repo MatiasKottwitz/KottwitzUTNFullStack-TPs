@@ -60,47 +60,127 @@ span{
     color: #FFFFFF;
     font-family: 'Poppins';
 }
-header {
+/* ---------------------------> Seccion del Nav bar */
+.my-li {
+    list-style: none;
+}
+
+.my-a{
+    text-decoration: none;
+    color: #2F2105;
+    font-size: 1rem ;
+    font-weight: 500 ;
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+.my-a:hover{
+    color: #F38E2C
+}
+.my-header {
     width: 100%;
     position: absolute;
     padding: 0 2rem;
     z-index: 1;
 }
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none !important;
-    color: #2F2105 !important;
-    font-size: 1rem !important;
-}
-
-a:hover{
-    color: #F38E2C !important;
-}
-
 .nav-container{
-        width:100%;
-        height:60px;
-        max-width:1300px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    width:100%;
+    height:60px;
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-ul {
+
+.nav-container .links{
     display: flex;
-    gap: 1.2rem;
-    margin-right: 8.2rem !important;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.pedido{
+    background: #2F2105;
+    color:#FFFFFF;
+    filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.30));
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    list-style: none;
+    text-decoration: none;
+}
+.pedido:hover{
+    scale: 1.05;
+    color: #F4AE26;
+}
+.pedido:active{
+    scale: 0.95;
 }
 
 .nav-container .menu{
    color: #2F2105;
    font-size: 1.2rem;
    cursor: pointer;
-   display: none;
+   display: none; 
+}
+
+/* ---------------------------> Seccion Nav bar Menu */
+.menu-resp{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 330px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 100%, rgba(255, 255, 255, 0.2) 100%);
+    border-radius: 12px;
+    filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+    overflow: hidden;
+    transition: height 0.2s ease 0s;
+    display: none;
+    
+}
+.menu-resp.open{
+    height: 340px;
+}
+.menu-resp li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-resp .pedido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+@media (max-width: 576px){
+    .menu-resp{
+        left: 2rem;
+        width: unset;
+    }
+}
+/* ---------------------------> Seccion Responsive del Nav bar */
+@media (max-width: 992px) {
+    .nav-container .links,
+    .nav-container .pedido,
+    .nav-container .cart{
+        display: none;
+    }
+    .nav-container .menu{
+        display: block;
+    }
+    .menu-resp{
+        display: block;
+    }
 }
 
 .rectangle-img{
@@ -371,7 +451,7 @@ p{
     text-align: center;
     letter-spacing: 0.04em;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 h1, p {
@@ -443,7 +523,7 @@ input, textarea {
 
 .site-footer{
     text-align: center;
-    padding: 1px 0 2px;  
+    padding: 1px 0 2px; 
 }
 
 .copyright-text {

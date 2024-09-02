@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="my-header" >
         <div class="nav-container">
             <i class="logos"><svg width="42" height="20" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M41 1.5C41 7.46737 39 13.5 36 17.4099C32 21.5 32 24 20.5222 24C9.04444 24 9 22.1151 4.61232 17.4099C0.224632 12.7047 9.01048e-07 7.96737 0 2H4C4 10.5 7.43884 14.5834 7.43884 14.5834C7.43884 14.5834 10.5222 20.0027 20.5222 20.0027C30.5222 20.0027 33 14.5834 33 14.5834C33 14.5834 36.4321 8.5 36.4321 1.5H41Z" fill="#2F2105"/>
@@ -21,17 +21,16 @@
                 <path d="M34 1.59495C34 5.94584 32.525 10.1185 29.8995 13.1951C27.274 16.2716 23.713 18 20 18C16.287 18 12.726 16.2716 10.1005 13.1951C7.475 10.1185 6 5.94584 6 1.59495C6 1.59495 14 5.18358 20 1.59495C26 -1.99369 34 1.59495 34 1.59495Z" fill="#F4AE26"/>
                 <rect x="1" y="27" width="47" height="3" rx="1.5" fill="#2F2105"/>
                 </svg><span>Cafe</span>Walk</i>
-            <nav>
-                <ul>
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#acerca">Acerca de</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#locales">Locales</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-            <i class="logos"><svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ul class="links" >
+                <li class="my-li"><a href="#home" class="my-a" >Inicio</a></li>
+                <li class="my-li"><a href="#servicios" class="my-a" >Servicios</a></li>
+                <li class="my-li"><a href="#acerca" class="my-a" >Acerca de</a></li>
+                <li class="my-li"><a href="#menu" class="my-a" >Menu</a></li>
+                <li class="my-li"><a href="#locales" class="my-a" >Locales</a></li>
+                <li class="my-li"><a href="#contacto" class="my-a" >Contacto</a></li>
+            </ul>
+                <a href="pages/pedidos.html" class="pedido">Menu Especial</a>
+                <i class="cart"><svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.66667 9.33333H25.0533C25.4259 9.33334 25.7943 9.41142 26.1349 9.56254C26.4754 9.71365 26.7805 9.93444 27.0305 10.2107C27.2805 10.4869 27.4698 10.8125 27.5863 11.1664C27.7027 11.5203 27.7437 11.8946 27.7067 12.2653L26.9067 20.2653C26.8409 20.9233 26.5329 21.5334 26.0426 21.9772C25.5523 22.4209 24.9146 22.6666 24.2533 22.6667H11.52C10.9033 22.6669 10.3056 22.4534 9.82859 22.0625C9.35162 21.6716 9.02487 21.1274 8.904 20.5227L6.66667 9.33333Z" stroke="#1D1D1D" stroke-width="2" stroke-linejoin="round"/>
                 <path d="M21.3333 28H24M6.66667 9.33333L5.58667 5.00933C5.51444 4.721 5.34794 4.46508 5.11361 4.28221C4.87928 4.09934 4.59057 4.00001 4.29333 4H2.66667L6.66667 9.33333ZM10.6667 28H13.3333H10.6667Z" stroke="#1D1D1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="27" cy="9" r="4.5" fill="#FF912B" stroke="white"/>
@@ -40,7 +39,18 @@
                 <div class="menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+                <!-- <img src="images/art-back.svg" alt="" class="bg-img-hero"> -->
         </div>
+       <div class="menu-resp">
+            <li class="my-li" ><a href="#home" class="my-a" >Inicio</a></li>
+            <li class="my-li" ><a href="#servicios" class="my-a" >Servicios</a></li>
+            <li class="my-li" ><a href="#acerca" class="my-a" >Acerca de</a></li>
+            <li class="my-li" ><a href="#menu" class="my-a" >Menu</a></li>
+            <li class="my-li" ><a href="#locales" class="my-a" >Locales</a></li>
+            <li class="my-li" ><a href="#contacto" class="my-a" >Contacto</a></li>
+            <li class="my-li" ><a href="#" class="pedido" class="my-a" >Menu Especial</a></li>
+       </div>
+       <script src="JS/menu_resp.js" ></script>
     </header>
     <main>
         <section id="home">
@@ -222,7 +232,7 @@
                                    
                                     <h3 class="card-title">Waffle Helado  <span>&emsp;$1000</span></h3>
                                     <p class="card-text">Waffle con Helado de Vainilla </p>
-                                    <button type="button" class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <button type="button"< class="btn btn-light" data-bs-toggle="button" aria-pressed="true"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                                      </svg> Comprar</button>
                                  </div>
